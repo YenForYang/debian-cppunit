@@ -1,0 +1,22 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node39 [label="SynchronizedObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_synchronized_object.html",tooltip="Base class for synchronized object. "];
+  Node39 -> Node40 [dir="back",color="darkgreen",fontsize="10",style="solid",fontname="Helvetica"];
+  Node40 [label="TestResult",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_result.html",tooltip="Manages TestListener.A single instance of this class is used when running the test. It is usually created by the test runner (TestRunner). "];
+  Node40 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="TextTestResult",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_text_test_result.html",tooltip="Holds printable test result (DEPRECATED).deprecated Use class TextTestProgressListener and TextOutput..."];
+  Node39 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TestSuccessListener",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_success_listener.html",tooltip="TestListener that checks if any test case failed. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="TestResultCollector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_result_collector.html",tooltip="Collects test result.A TestResultCollector is a TestListener which collects the results of executing ..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="TestListener",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_listener.html",tooltip="Listener for test progress and result.Implementing the Observer pattern a TestListener may be registe..."];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="BriefTestProgressListener",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_brief_test_progress_listener.html",tooltip="TestListener that prints the name of each test before running it. "];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="TextTestProgressListener",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_text_test_progress_listener.html",tooltip="TestListener that show the status of each TestCase test result. "];
+}

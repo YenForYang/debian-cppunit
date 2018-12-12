@@ -1,0 +1,31 @@
+digraph "Test"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="Test",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="TestComposite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_composite.html",tooltip="A Composite of Tests. "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TestSuite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_suite.html",tooltip="A Composite of Tests.It runs a collection of test cases. Here is an example. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="TestRunner::WrappingSuite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_runner_1_1_wrapping_suite.html",tooltip="(INTERNAL) Mutating test suite. "];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="TestDecorator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_decorator.html",tooltip="Decorator for Tests. "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="RepeatedTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_repeated_test.html",tooltip="Decorator that runs a test repeatedly. "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="TestSetUp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_set_up.html",tooltip="Decorates a test by providing a specific setUp() and tearDown(). "];
+  Node0 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="TestLeaf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_leaf.html",tooltip="A single test object. "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="TestCase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_case.html",tooltip="A single test object. "];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Orthodox\< ClassUnderTest \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_orthodox.html"];
+  Node8 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="TestCaller\< Fixture \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_caller.html",tooltip="Generate a test case from a fixture method.A test caller provides access to a test case method on a t..."];
+  Node8 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="TestCaseDecorator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_test_case_decorator.html",tooltip="Decorator for Test cases. "];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="ExceptionTestCaseDecorator\l\< ExpectedException \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_exception_test_case_decorator.html",tooltip="Expected exception test case decorator. "];
+}

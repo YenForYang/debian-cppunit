@@ -1,0 +1,46 @@
+digraph "SynchronizedObject.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node5 [label="SynchronizedObject.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="TestResult.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test_result_8h.html"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="TextTestResult.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_text_test_result_8h.html"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="TextTestResult.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_text_test_result_8cpp.html"];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="TextTestRunner.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_text_test_runner_8cpp.html"];
+  Node6 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Protector.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_protector_8cpp.html"];
+  Node6 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="RepeatedTest.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_repeated_test_8cpp.html"];
+  Node6 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="TestCase.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test_case_8cpp.html"];
+  Node6 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="TestComposite.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test_composite_8cpp.html"];
+  Node6 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="TestResult.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test_result_8cpp.html"];
+  Node6 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="TestRunner.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test_runner_8cpp.html"];
+  Node6 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="TestSuite.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test_suite_8cpp.html"];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="TestSuccessListener.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test_success_listener_8h.html"];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="TestResultCollector.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test_result_collector_8h.html"];
+  Node18 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="CompilerOutputter.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_compiler_outputter_8cpp.html"];
+  Node18 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="TestResultCollector.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test_result_collector_8cpp.html"];
+  Node18 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="TextOutputter.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_text_outputter_8cpp.html"];
+  Node18 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="XmlOutputter.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_xml_outputter_8cpp.html"];
+  Node17 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="TestSuccessListener.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test_success_listener_8cpp.html"];
+  Node5 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="SynchronizedObject.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_synchronized_object_8cpp.html"];
+}

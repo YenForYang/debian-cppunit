@@ -1,0 +1,45 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/architecture.mk
+
+%:
+	dh $@ --parallel --with autoreconf
+
+override_dh_auto_build-arch:
+	dh_auto_configure -- --disable-html-docs --disable-doxygen
+	dh_auto_build
+
+override_dh_auto_build-indep:
+	dh_auto_configure
+	cd doc && $(MAKE)
+
+override_dh_auto_test:
+	if [ -f ./src/cppunit/.libs/libcppunit.so ]; then dh_auto_test; fi
+
+override_dh_auto_install:
+	if [ -f ./src/cppunit/.libs/libcppunit.so ]; then dh_auto_install; fi
+
+override_dh_install-arch:
+	# Runtime library package
+	dh_install -plibcppunit-1.14-0 --autodest debian/tmp/usr/lib/*/lib*.so.*
+
+	# Developer package
+#	dh_install -plibcppunit-dev --autodest debian/tmp/usr/bin/DllPlugInTester
+
+	dh_install -plibcppunit-dev --autodest debian/tmp/usr/lib/*/lib*.so
+	dh_install -plibcppunit-dev --autodest debian/tmp/usr/lib/*/lib*.a
+	dh_install -plibcppunit-dev --autodest debian/tmp/usr/lib/*/pkgconfig
+	dh_install -plibcppunit-dev --autodest debian/tmp/usr/include
+	# W: libcppunit-1.14-0: dev-pkg-without-shlib-symlink usr/lib/x86_64-linux-gnu/libcppunit-1.14.so.0.0.0 usr/lib/x86_64-linux-gnu/libcppunit-1.14.so
+	dh_link -plibcppunit-dev /usr/lib/$(DEB_HOST_MULTIARCH)/libcppunit.so \
+		/usr/lib/$(DEB_HOST_MULTIARCH)/libcppunit-1.14.so
+
+override_dh_install-indep:
+	# Documentation package
+	$(MAKE) -C examples clean
+	dh_installdocs -plibcppunit-doc doc/html
+	dh_installexamples -plibcppunit-doc examples/* debian/examples/*
+	rm -f debian/libcppunit-doc/usr/share/doc/libcppunit-doc/examples/simple/.gitignore
+
+override_dh_shlibdeps:
+	dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info

@@ -1,0 +1,13 @@
+digraph "TestPlugIn.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node9 [label="TestPlugIn.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="TestPlugInDefaultImpl.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test_plug_in_default_impl_8h.html"];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="TestPlugInDefaultImpl.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test_plug_in_default_impl_8cpp.html"];
+  Node9 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="PlugInManager.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_plug_in_manager_8cpp.html"];
+}

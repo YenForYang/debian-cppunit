@@ -1,0 +1,39 @@
+Format: 1.8
+Date: Sat, 29 Jul 2017 18:54:12 +0200
+Source: cppunit
+Binary: libcppunit-1.14-0 libcppunit-dev libcppunit-doc
+Built-For-Profiles: nobiarch nocheck
+Architecture: amd64 all
+Version: 1.14.0-3
+Distribution: unstable
+Urgency: medium
+Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Changed-By: Rene Engelhard <rene@debian.org>
+Description:
+ libcppunit-1.14-0 - Unit Testing Library for C++
+ libcppunit-dev - Unit Testing Library for C++
+ libcppunit-doc - Unit Testing Library for C++
+Closes: 870028
+Changes:
+ cppunit (1.14.0-3) unstable; urgency=medium
+ .
+   * move docs build into build-indep and doxygen to Build-Depends-Indep:
+     (closes: #870028)
+Checksums-Sha1:
+ dd4bb4464358f98140e2fccb49cdc60913e1c21a 6053 cppunit_1.14.0-3_amd64.buildinfo
+ ba35cf3a9a445bcba1c9ad1ae1f6c024cbaf3348 585296 libcppunit-1.14-0-dbgsym_1.14.0-3_amd64.deb
+ cd03ce05eafc1700f3fe9ebb6554c54207c9cd8b 175000 libcppunit-1.14-0_1.14.0-3_amd64.deb
+ 07cfd216e5c93936324327635970de9de39199d5 8659652 libcppunit-dev_1.14.0-3_amd64.deb
+ 951357e9888d01ebc8d9f0cb02d457eaf7c8220a 777556 libcppunit-doc_1.14.0-3_all.deb
+Checksums-Sha256:
+ d800e55f11e78b2c4828ae31f82353fee423785ae3a5816d8c40d3507e800e63 6053 cppunit_1.14.0-3_amd64.buildinfo
+ 15b3e91bc12a46d36f9571490cbe673c762c294da5f62cc08832447798f57d44 585296 libcppunit-1.14-0-dbgsym_1.14.0-3_amd64.deb
+ ea3aa3fed7de7b7da51cb070446ecc753ccc2bc8b8a2bc7235ecfca3691b1d7e 175000 libcppunit-1.14-0_1.14.0-3_amd64.deb
+ 4e3d17f57710bcef00e79b2069ff5ef8a896a420e4dbb7286f2b22f9f88663db 8659652 libcppunit-dev_1.14.0-3_amd64.deb
+ 2135c23310bb5e68efd52beff3f8019a109839404c4fa8cf99cbf73e4fad0a75 777556 libcppunit-doc_1.14.0-3_all.deb
+Files:
+ e8318650dff5ccfc30eea01ec66b25e0 6053 devel optional cppunit_1.14.0-3_amd64.buildinfo
+ 2a15d7eb2e1debae2ebddba50279fb39 585296 debug optional libcppunit-1.14-0-dbgsym_1.14.0-3_amd64.deb
+ 6373b216192bf0c782510f12e7febad2 175000 libs optional libcppunit-1.14-0_1.14.0-3_amd64.deb
+ 03a44775feb12caad50f711455c5115f 8659652 libdevel optional libcppunit-dev_1.14.0-3_amd64.deb
+ 39780c991140ba86e43a92ee8afa65c5 777556 doc optional libcppunit-doc_1.14.0-3_all.deb

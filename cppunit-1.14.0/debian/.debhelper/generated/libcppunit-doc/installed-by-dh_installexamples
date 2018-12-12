@@ -1,0 +1,17 @@
+examples/ClockerPlugIn
+examples/DumperPlugIn
+examples/Makefile
+examples/Makefile.am
+examples/Makefile.in
+examples/ReadMe.txt
+examples/cppunittest
+examples/examples.dsw
+examples/examples.opt
+examples/examples2008.sln
+examples/hierarchy
+examples/money
+examples/msvc6
+examples/simple
+debian/examples/README
+debian/examples/configure.ac
+debian/examples/setup.sh

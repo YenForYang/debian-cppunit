@@ -1,0 +1,29 @@
+digraph "TestSuite.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node9 [label="TestSuite.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="HelperMacros.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_helper_macros_8h.html",tooltip="Macros intended to ease the definition of test suites. "];
+  Node9 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="TestRunner.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test_runner_8h.html"];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="TextTestRunner.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ui_2text_2_text_test_runner_8h.html"];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="TextTestRunner.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_text_test_runner_8h.html"];
+  Node12 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="TestRunner.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ui_2text_2_test_runner_8h.html"];
+  Node12 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="TextTestRunner.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_text_test_runner_8cpp.html"];
+  Node11 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="TestRunner.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test_runner_8cpp.html"];
+  Node9 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="TestFactoryRegistry.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test_factory_registry_8cpp.html"];
+  Node9 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="TestPlugInDefaultImpl.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test_plug_in_default_impl_8cpp.html"];
+  Node9 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="TestSuite.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test_suite_8cpp.html"];
+  Node9 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="TestSuiteBuilderContext.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test_suite_builder_context_8cpp.html"];
+  Node9 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

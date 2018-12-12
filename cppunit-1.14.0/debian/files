@@ -1,0 +1,5 @@
+cppunit_1.14.0-3_amd64.buildinfo devel optional
+libcppunit-1.14-0-dbgsym_1.14.0-3_amd64.deb debug optional automatic=yes
+libcppunit-1.14-0_1.14.0-3_amd64.deb libs optional
+libcppunit-dev_1.14.0-3_amd64.deb libdevel optional
+libcppunit-doc_1.14.0-3_all.deb doc optional

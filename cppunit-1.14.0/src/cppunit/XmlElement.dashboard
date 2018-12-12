@@ -1,0 +1,12 @@
+{
+    "driver_name" : "icpc",
+    "options" : [ "-I.", "-I../..", "-I../../include", "-I../../include", "-xHost", "-parallel", "-inline-level=2", "-qemit-build-options", "-qemit-messages", "-multiple-processes=4", "-I/usr/include/x86_64-linux-gnu/c++/8", "-falign-loops", "-qopt-matmul", "-qopt-mem-layout-trans", "-fpermissive", "-ipo-jobs4", "-Wl,--as-needed,--gc-sections,--print-gc-sections,--print-memory-usage,--stats,--reduce-memory-overheads,--no-keep-memory", "-ffunction-sections", "-fdata-sections", "-diag-disable=10148,10006,10121,11021", "-par-schedule-auto", "-ipo", "-DHAVE_CONFIG_H", "-Wdate-time", "-D_FORTIFY_SOURCE=2", "-g", "-O2", "-fdebug-prefix-map=/home/richard/debs/NONGIT/cppunit/cppunit-1.14.0=.", "-fstack-protector-strong", "-Wformat", "-Werror=format-security", "-march=native", "-pipe", "-Werror", "-Wall", "-Wextra", "-pedantic", "-c", "-o", "XmlElement.o" ],
+    "objects" : [
+        {
+            "object_name" : "XmlElement.o",
+            "source_name" : "XmlElement.cpp",
+            "start_time" : "2018-12-03T01:31:28Z",
+            "end_time" : "2018-12-03T01:31:29Z"
+        }
+    ]
+}

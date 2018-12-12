@@ -1,0 +1,13 @@
+Package: libcppunit-1.14-0-dbgsym
+Source: cppunit
+Version: 1.14.0-3
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 693
+Depends: libcppunit-1.14-0 (= 1.14.0-3)
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libcppunit-1.14-0
+Build-Ids: 5fc9f977a6f82a5396b5d7e711d430e5dc8a0b06
